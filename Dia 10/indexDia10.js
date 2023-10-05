@@ -19,3 +19,21 @@ for (let i = 0; i < 10; i++){
 }
 
 console.log('O número ${numeroProcurado} foi encontrado nos índices: ${indices}');
+
+let array = []
+let arrayInvertido = []
+
+for (let i = 0; i < 5; i++) {
+    let numero = Number(prompt("Digite o" + (i + 1) + "º número"))
+    array[i] = numero
+}
+
+console.log("Array original : " + array)
+
+let contador = 4
+for (let i = 0; i < 5; i++) {
+    arrayInvertido[i] = array[contador]
+    contador--
+}
+
+console.log("Array invertido: " + arrayInvertido)
